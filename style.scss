@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Work+Sans&display=swap');
+
+$font-display: "Roboto", sans-serif;
+$font-body: "Roboto Mono", cursive;
+
+$color-modifier: #264db6;
+$color-function: #dd4747de;
+$color-white: #eeeeee;
+$color-black: #000000;
+
+* {
+  margin: 20;
+  padding: 20;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+// html {
+//   background: linear-gradient(to right, $color-modifier, $color-function);
+// }
+
+.input__container {
+  .input__text {
+    font-family: $font-display;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .input__field {
+    color: $color-black;
+    background-color: $color-white;
+    font-family: $font-body;
+    font-size: 16px;
+  }
+}
+
+.output__container {
+  .output__text {
+    font-family: $font-display;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .output__field {
+    color: $color-white;
+    font-family: $font-body;
+    font-size: 16px;
+  }
+}
+
+.input__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .input__field {
+    height: 30vh;
+    width: 80%;
+  }
+
+  .input__button {
+
+    margin: 25px;
+    width: 15%;
+    height: 2.5rem;
+  }
+}
+
+.output__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .output__field {
+    height: 30vh;
+    width: 80%;
+    border: 2px solid black;
+  }
+}
