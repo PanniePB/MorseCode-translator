@@ -2,25 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Morse code Translator</title>
-  <script type="module" src="./app.js"></script>
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English to morse translator</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="main.js" type="module"></script>
 </head>
 
 <body>
-  <div class="input__container">
-    <h1 class="input__text">Please type what you want translated below:</h1>
-    <input class="input__field" id="input" type="text">
-    <button class="input__button" id="translateButton">Translate</button>
+  <div class="background-photo"></div>
+  <div class="container">
+    <header>
+
+      <h1 id="EngToMorse">An English to morse translator</h1>
+      <h3 id="MorseToEng" class="invisible">A morse to English translator</h2>
+        <button id="swap">Try the other way</button>
+    </header>
+    <main>
+      <div class="input--area">
+        <label for="main__entry">What you say:</label><br />
+        <textarea name="main__output" id="main__entry" cols="30" rows="7"></textarea>
+      </div>
+      <button class="main__translate engToMorse">⇊</button>
+      <button class="main__translate morseToEng invisible">⇊</button>
+
+      <div class="main__output">
+        <label for="main__output">What you really wanted to say:</label><br>
+        <textarea name="main__output" id="main__output" cols="30" rows="7"></textarea>
+      </div>
+
+      <button id="reset">Reset</button>
   </div>
-  <div class="output__container">
-    <h1 class="output__text">Translated to morse code:</h1>
-    <p class="output__field" id="outputField">
-    </p>
-  </div>
+  </main>
+
 
 </body>
 

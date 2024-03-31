@@ -1,4 +1,4 @@
-export const alphabet = {
+const morseCode = {
   "a": ".- ",
   "b": "-... ",
   "c": "-.-. ",
@@ -47,3 +47,4 @@ export const alphabet = {
   "?": "..--.. ",
   "/": "-..-. ",
 };
+export default morseCode;
