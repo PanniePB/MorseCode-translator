@@ -1,4 +1,4 @@
-import morseCode from "../morse.js";
+import morseCode from "./morse.js";
 import {
   translateToMorse,
   translateToEnglish

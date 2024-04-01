@@ -37,16 +37,17 @@ header {
 }
 
 .main__output {
-  margin-top: 15px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .background-photo {
-  background-image: url("./image/background.jpg");
+  background-image: url("./image/wallpaper.jpg");
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 8%;
+  opacity: 70%;
 }
 
 .container {
@@ -64,10 +65,11 @@ header {
 .main__translate {
   display: block;
   padding: 5px 10px;
-  border-radius: 30px;
-  border: 1px solid #457b9d;
+  border-radius: 10px;
+  border: 5px solid #457b9d;
   color: #f1faee;
   background-color: #457b9d;
+  margin-top: 20px;
 }
 
 h1,
@@ -76,12 +78,13 @@ h3,
 label {
   text-align: center;
   color: #1d3557;
+  font-weight: bold;
 }
 
 textarea {
   resize: none;
   color: #1d3557;
-  background-color: #a8dadc;
+  background-color: #d5eaea;
 }
 
 .invisible {
@@ -102,5 +105,5 @@ textarea {
 .main__translate:hover {
   background-color: #1d3557;
   color: white;
-  border: 1px solid white;
+  cursor: grab;
 }

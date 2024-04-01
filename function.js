@@ -1,19 +1,3 @@
-// import { alphabet } from "./morse.js";
-
-
-// export const translateEnglish = (e) => {
-//     const inputText = input.value;
-//     const noInput = checkEmptyField(inputText);
-//     if(noInput) {
-//         result.textContent = 'no input detected.';
-//     } else {result.textContent = "";
-// const morse = inputText.toLowerCase().split("");
-// morse.forEach((letter) => (result.textContent += alphabet[letter]));
-//     }
-// };
-
-
-
 export const translateToMorse = (input, object) => {
   if (typeof input == "string" || typeof input == "number") {
     const otherLang = []
@@ -30,28 +14,6 @@ export const translateToMorse = (input, object) => {
     if (hasInvalidChars == 1) { return "Invalid characters included, can't translate. Please only include letters and numbers." } else { return otherLang.join(" ").replaceAll("    ", "  ") }
   } else { return "Invalid data type entered. Please only enter string or number." }
 }
-
-// export const translateEnglish = (word) => {
-//   let code = "";
-//   let input = word;
-//   const noInput = checkEmptyField(input);
-//   if (noInput) {
-//     return "no input detected.";
-//   } else {
-//     input = "";
-//     let morse = word.toLowerCase().split("");
-//     morse.forEach((letter) => (code += alphabet[letter]));
-//   }
-//   return code;
-// };
-
-// const checkEmptyField = (word) => {
-//   if (word.length === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
 
 export const translateToEnglish = (inputText, object) => {
 
@@ -74,10 +36,6 @@ export const translateToEnglish = (inputText, object) => {
     }
     translated.push(translatedWord)
   });
-  if (hasInvalidChars == 1) {
-    return "Invalid morse code included, please ensure you enter correct morse code for letters and numbers"
-  }
-  else {
-    return translated.join(" ")
-  }
+  if (hasInvalidChars == 1) { return "Invalid morse code included, please ensure you enter correct morse code for letters and numbers" } else { return translated.join(" ") }
 }
+
